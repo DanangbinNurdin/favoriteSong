@@ -1,0 +1,54 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoO30NLPVLsBHsZvIzp9B9XcOfJgDKD4D-g&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-links a:visited {
+    color: red;
+}
+
+#songs {
+    display: flex;
+    flex-direction: column;
+}
+
+#songs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background-color: rgb(209, 213, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    width: 260px;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    #songs-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
